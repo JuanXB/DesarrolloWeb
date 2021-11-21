@@ -158,8 +158,49 @@ h1 {
 }
 .contacto {
   grid-area: contacto;
+  width: 100%;
+  margin-left: 170px;
+}
+
+.sobre {
+  float: left;
+  margin-left: 50px;
+}
+
+.contact {
+  margin-left: 600px;
+}
+
+.sobre2 {
+  font-size: 30px;
+  text-align: center;
+}
+.info {
+  font-size: 30px;
+  text-align: center;
+}
+
+.infoimg {
+  width: 100%;
+}
+
+.llamada {
+  text-align: center;
+}
+
+.sobreimg {
+  text-align: center;
+  margin-left: 170px;
+  
 }
 
 footer {
   grid-area: footer;
+  text-align: center;
+  font-size: 10px;
+  color: #0A1D37;
+}
+
+.final{
+  margin-top: 30px;
 }
