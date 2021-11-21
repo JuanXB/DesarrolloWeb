@@ -35,7 +35,7 @@ ul {
 
 li {
   display: inline-block;
-  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 30px;
 }
 
@@ -60,7 +60,7 @@ header {
 }
 
 .titulo {
-  background-color: #FFBD9B;
+  background-color:rgb(255, 189, 155,0.3);
   text-align: center;
   margin-top: 200px;
   margin-left: 100px;
@@ -78,8 +78,31 @@ h1 {
 
 .section1 {
   grid-area: section1;
-  width: 100%;
+  margin-right: 50px;
   height: 500px;
+}
+
+.s1 {
+  margin-top: 50px;
+  height: 200px;
+  background-color:rgb(255, 216, 204);
+  margin-left: 600px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: #0A1D37 2px solid;
+}
+
+.titulo2 {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+}
+
+.pastel_descripcion {
+  text-align: justify;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .imag1 {
@@ -90,10 +113,36 @@ h1 {
 
 .img1 {
   width: 500px;
+  border-radius: 10px;
+  border: #0A1D37 2px solid;
 }
 .section2 {
   grid-area: section2;
+  margin-right: 50px;
+  height: 500px;
+}
+
+.s2 {
+  margin-top: 50px;
+  height: 200px;
+  background-color:rgb(255, 216, 204);
+  margin-left: 600px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: #0A1D37 2px solid;
+}
+
+.titulo3 {
   width: 100%;
+  text-align: center;
+  font-size: 50px;
+}
+
+.tiramisu_descripcion {
+  text-align: justify;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .imag2 {
@@ -104,6 +153,8 @@ h1 {
 
 .img2 {
   width: 500px;
+  border-radius: 10px;
+  border: #0A1D37 2px solid;
 }
 .contacto {
   grid-area: contacto;
