@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFEEDB;
+  background-image: url("../imagenes/waffles-g952964b44_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contenedor {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header header header"
+                        "formulario formulario formulario"
+                        "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color:#FFD8CC;
+  height: 80px;
+}
+
+.titulo {
+  float: left;
+  width: 50%;
+  margin-top: 20px;
+}
+
+h1 {
+  color: #0A1D37;
+}
+
+nav {
+  float: right;
+  width: 50%;
+}
+
+ul {
+  width: 100%;
+  text-align: right;
+}
+
+li {
+  display: inline-block;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+a {
+  color: #0A1D37;
+  text-decoration: none;
+  font-weight: bolder;
+  
+}
+
+.formulario {
+  grid-area: formulario;
+  background-color: rgb(255, 238, 219, 0.5);
+  width: 450px;
+  height: 310px;
+  margin-left: 730px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+footer {
+  grid-area: footer;
+  margin-left: 900px;
+  margin-top: 50px;
+}
+
+.final {
+  color: #0A1D37;
+  font-size: 15px;
+}
