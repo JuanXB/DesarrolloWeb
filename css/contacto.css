@@ -1,8 +1,10 @@
+/*Configuración de css general */
 * {
   margin: 0;
   padding: 0;
 }
 
+/*Aplicación de cambios a body */
 body {
   background-color: #FFEEDB;
   background-image: url("../imagenes/waffles-g952964b44_1280.jpg");
@@ -11,6 +13,8 @@ body {
   background-repeat: no-repeat;
 }
 
+/*Aplicación de cambios con css grid, para estructurar
+  los elementos de la página */
 .contenedor {
   width: 100%;
   display: grid;
@@ -21,6 +25,13 @@ body {
                         "formulario formulario formulario"
                         "footer footer footer";
 }
+
+/*
+  Modificacion de contenido
+
+  En esta parte se modifica todo el contenido de la página  en general
+  basandose en css grid.
+*/
 
 header {
   grid-area: header;
@@ -73,6 +84,7 @@ a {
   align-items: center;
 }
 
+/*Estilos de pie de página*/
 
 footer {
   grid-area: footer;
