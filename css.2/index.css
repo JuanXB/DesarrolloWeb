@@ -1,0 +1,190 @@
+/*Configuración de css general */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*Aplicación de cambios a body */
+body {
+  background-color: #FFEEDB;
+}
+
+/*Aplicación de cambios con css grid, para estructurar
+  los elementos de la página */
+.contenedor {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(9, auto);
+  grid-gap: 10px;
+
+}
+
+/*
+  Modificacion de contenido
+
+  En esta parte se modifica todo el contenido de la página  en general
+  basandose en css grid.
+*/
+nav {
+  width: 100%;
+  height: 35px;
+  position: fixed;
+  text-align: center;
+  background-color: #FFEEDB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-row : 1 / 2;
+}
+
+nav ul {
+  width: 100%;
+}
+
+nav li {
+  display: inline-block;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #0A1D37;
+  font-weight: bolder;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  
+  grid-row: 2 / 3;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background: url(/imagenes/header.jpg);
+  background-position: center center;
+  background-size: cover;
+
+}
+
+
+header .titulo {
+  background-color:rgb(255, 189, 155,0.3);
+  text-align: center;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 50px;
+  color:#0A1D37;
+}
+
+header .subtitulo {
+  color: #11243f;
+}
+
+.section1 {
+  grid-row: 3 / 5 ;
+  
+  width: 80%;
+  margin: auto;
+
+
+  display: flex;
+  align-items:center;
+  
+}
+
+
+.section2 {
+  grid-row: 5 / 7;
+
+  width: 80%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+
+}
+
+
+.section1 .imag1,
+.section2 .imag2 {
+  grid-column: 1 / 2;
+}
+
+.section1 .img1,
+.section2 .img2 {
+  border: #0A1D37 3px solid;
+  border-radius: 5px;
+
+  width: 500px;
+}
+
+.section1 .s1,
+.section2 .s2 {
+  grid-column: 2 / 4;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow: auto;
+
+  height: 200px;
+
+  background-color: #FFBD9B;
+  border-radius: 5px;
+  border: #0A1D37 3px solid;
+  margin: 5px;
+}
+
+.s1 .pastel_descripcion,
+.s2 .tiramisu_descripcion {
+  text-align: justify;
+  margin: 5px;
+}
+
+
+.contacto {
+  grid-row: 7 / 8;
+
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+}
+
+.contacto .linkSobre {
+  grid-column: 1 / 2;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto .linkContact {
+  grid-column: 2 / 3;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+/*Estilos de pie de página*/
+
+footer {
+
+  grid-row: 8 / 9;
+  text-align: center;
+  font-size: 10px;
+  color: #0A1D37;
+  height: 20px;
+}
